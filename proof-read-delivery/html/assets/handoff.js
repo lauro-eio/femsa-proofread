@@ -67,7 +67,7 @@
       var rows = metaEl.getAttribute("data-rows") || "0";
       var blocked = metaEl.getAttribute("data-blocked") || "0";
       metaEl.textContent =
-        rows + " strings · " + changed + " changed · " + blocked + " ES gaps · viewing " + lang.toUpperCase();
+        rows + " strings · " + changed + " changed · " + blocked + " slot notes · viewing " + lang.toUpperCase();
     }
   }
 

@@ -19,7 +19,7 @@
   <button type="button" class="lang-switch__btn" data-lang-switch="pt" aria-pressed="false">PT</button>
 </div>
       <nav class="site-header__nav"></nav>
-      <div class="site-header__meta" data-track-meta data-rows="361" data-blocked="5" data-changed-en="168" data-changed-pt="147">361 strings · EN 168 changed · PT 147 changed · 5 ES gaps · 10 countries</div>
+      <div class="site-header__meta" data-track-meta data-rows="361" data-blocked="5" data-changed-en="168" data-changed-pt="147">361 strings · EN 168 changed · PT 147 changed · 5 slot notes · 10 countries</div>
     </div>
   </header>
   <main class="wrap">
@@ -28,13 +28,14 @@
       Open a country — <strong>Spanish source stays fixed</strong>; use the
       <strong>EN | PT</strong> switch to change target and correction.
       Apply correction by <code>id</code>. Blank correction = leave live text as-is.
-      Costa Rica <em>ES source gap</em> rows blank Spanish only.
+      Costa Rica rows marked <em>ES↔target slot check</em> keep Spanish when present;
+      confirm the slot before applying.
     </p>
     <ul class="country-list">
   <li><a href="argentina.html"><span class="country-list__name">Argentina</span><span class="country-list__count">37 · EN 19 ch · PT 16 ch</span></a></li>
   <li><a href="brasil.html"><span class="country-list__name">Brasil</span><span class="country-list__count">36 · EN 20 ch · PT 15 ch</span></a></li>
   <li><a href="colombia.html"><span class="country-list__name">Colombia</span><span class="country-list__count">37 · EN 17 ch · PT 14 ch</span></a></li>
-  <li><a href="costa-rica.html"><span class="country-list__name">Costa Rica</span><span class="country-list__count">36 · EN 16 ch · PT 16 ch · 5 ES gaps</span></a></li>
+  <li><a href="costa-rica.html"><span class="country-list__name">Costa Rica</span><span class="country-list__count">36 · EN 16 ch · PT 16 ch · 5 slot notes</span></a></li>
   <li><a href="guatemala.html"><span class="country-list__name">Guatemala</span><span class="country-list__count">37 · EN 16 ch · PT 15 ch</span></a></li>
   <li><a href="mexico.html"><span class="country-list__name">México</span><span class="country-list__count">38 · EN 16 ch · PT 15 ch</span></a></li>
   <li><a href="nicaragua.html"><span class="country-list__name">Nicaragua</span><span class="country-list__count">34 · EN 14 ch · PT 12 ch</span></a></li>
@@ -43,8 +44,8 @@
   <li><a href="venezuela.html"><span class="country-list__name">Venezuela</span><span class="country-list__count">37 · EN 16 ch · PT 15 ch</span></a></li>
     </ul>
     <p class="foot-note">
-      Built from <code>proof-read-handoff/es-en|es-pt/*.csv</code>.
-      Slim CSV: <code>proof-read-handoff/client-csv/</code>.
+      Built from <code>proof-read-delivery/es-en|es-pt/*.csv</code>.
+      Slim CSV: <code>proof-read-delivery/client-csv/</code>.
       Rebuild: <code>python scripts/export_handoff_html.py</code>.
     </p>
 
