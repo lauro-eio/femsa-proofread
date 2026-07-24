@@ -1,0 +1,13 @@
+# This public repo publishes only the client-facing static site.
+# All extraction inputs, proofreading CSVs, scripts, QA, and local
+# workspace files stay local.
+*
+
+!.gitignore
+!README.md
+!vercel.json
+
+!proof-read-delivery/
+proof-read-delivery/*
+!proof-read-delivery/html/
+!proof-read-delivery/html/**
